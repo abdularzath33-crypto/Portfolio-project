@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurent page</title>
+        <style>
+             
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .res{
+            width:1390px;
+            height:660px;
+            margin-left: auto;
+            margin-top: auto;
+            position: absolute;
+            z-index: -1;
+            /* opacity: o.6; */
+        }
+         div form{      
+                text-align: center;
+                color:white;
+                background-color: black;
+                opacity: 0.6;
+                
+               position: absolute;
+               margin-top: 200px;
+               margin-left: 530px;
+               border: 2px solid rgb(19, 18, 13);
+               padding: 60px;
+             }
+             button{
+        border: 3px solid rgb(243, 243, 240);
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 15px;
+        padding: 10px;
+        font-weight: bold;
+        color: rgb(0, 255, 255);
+        background-color: black;
+    }
+    button:hover{
+        color: aliceblue;
+        border-color: aqua;
+    }
+       
+        </style>
+
+    </head>
+    
+    <body>
+        
+        
+    <img class="res" src="hotel.jpg">
+
+   
+    <div>
+        <form >
+   <b>User Name</b> <br>
+    <input type="text" id="name" ><br><br>
+    <b>Email</b><br>
+    <input type="email" id="email" ><br><br>
+    <b>Password</b><br>
+    <input type="password" id="password" ><br><br>
+
+    <button onclick="myFunction()">
+                     Submit
+                    </button>
+
+  </form>
+    </div>
+     <script>
+                function myFunction()
+                {
+                    alert("Login Successfully");
+                }
+            </script>
+
+    </body>
+</html>
+
+<!-- <body>
+        <h1>login validation task</h1>
+    <p id="dem"></p>
+    <script>
+        let username = "abcd123";
+        let password = "0000" ;
+        let us = username;
+        let ps=password;
+
+    if(us==username && ps==password)   
+ {
+    res = "login successfull";
+    }
+    else if(us!=username && ps==password)
+    {
+        res = "no";
+    }
+    else if(us==username && ps!=password)
+    {
+        res = "no no";
+    }
+
+document.getElementById("dem").innerHTML = res;
+    </script>
+    </body> -->
